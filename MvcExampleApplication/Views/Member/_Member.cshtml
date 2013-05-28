@@ -1,0 +1,27 @@
+﻿@model MvcExampleApplication.Member
+
+<tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.EmailId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.LastName)
+        </td>
+     @*   <td>
+            @Html.DisplayFor(modelItem => item.ProfilePicture)
+        </td>*@
+        <td>
+            @Html.ActionLink("Edit", "EditMember", new { id=Model.MemberId }) @*|*@
+          @*  @Html.ActionLink("Details", "Details", new { id=item.MemberId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MemberId })*@
+        </td>
+    </tr>
